@@ -87,7 +87,8 @@ jobs:
         uses: invisirisk/pse-action@latest
         with:
           api_url: "https://app.invisirisk.com"
-          app_token: IJeY2SzicrLuwS5JZl26AtUu2LSAarcoeb5JPCuYfExG2jOJBwBiT7OTv3iMzdEN7-pqQTrIXntNtQ6NnmaX5Q
+          app_token: ${{ secrets.IR_TOKEN }}
+
       # ============= InvisiRisk Setup End =============
       - uses: actions/checkout@v4
       - run: apt-get update && apt-get install -y curl
